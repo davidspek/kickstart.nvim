@@ -11,7 +11,7 @@ vim.api.nvim_buf_set_keymap(0, 'n', '<leader>yl', ':!yamllint %<CR>', { noremap 
 
 -- Folding
 vim.opt_local.foldmethod = 'indent'
-vim.opt_local.foldlevel = 1
+vim.opt_local.foldlevel = 4
 vim.api.nvim_buf_set_keymap(0, 'n', 'zj', ':lua NavigateFold("j")<CR>', { noremap = true, silent = true })
 vim.api.nvim_buf_set_keymap(0, 'n', 'zk', ':lua NavigateFold("k")<CR>', { noremap = true, silent = true })
 
